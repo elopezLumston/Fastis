@@ -303,6 +303,7 @@ open class FastisController<Value: FastisValue>: UIViewController, JTACMonthView
     private func configureUI() {
         self.view.backgroundColor = self.appearance.backgroundColor
         self.navigationItem.largeTitleDisplayMode = .never
+        self.navigationController?.isNavigationBarHidden = true
         self.navigationItem.leftBarButtonItem = self.cancelBarButtonItem
         self.navigationItem.rightBarButtonItem = self.doneBarButtonItem
     }
