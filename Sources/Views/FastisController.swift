@@ -163,6 +163,8 @@ open class FastisController<Value: FastisValue>: UIViewController, JTACMonthView
             self.updateSelectedShortcut()
             self.currentValueView.currentValue = self.value
             self.doneBarButtonItem.isEnabled = self.allowToChooseNilDate || self.value != nil
+            
+            self.dismissHandler?(.done(self.value))
         }
     }
 
